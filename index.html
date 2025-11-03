@@ -83,7 +83,7 @@
             border-radius: 25px;
             margin-right: 10px;
             font-weight: 500;
-            transition: all 0.s;
+            transition: all 0.3s;
         }
 
         .btn-signup:hover {
@@ -104,6 +104,21 @@
         .btn-signin:hover {
             background-color: #F57C00;
             color: #fff;
+        }
+
+        /* Center navbar links on large screens and keep auth buttons to the right */
+        @media (min-width: 992px) {
+            .navbar-collapse {
+                display: flex !important;
+                align-items: center;
+            }
+
+            .navbar-collapse .navbar-nav {
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+                gap: 8px;
+            }
         }
 
         /* Hero Section */
@@ -480,10 +495,10 @@
                         </a>
                     </li>
                 </ul>
-                    <button class="btn btn-signup" onclick="location.href='signup.html'">Sign Up</button>
-                    <button class="btn btn-signin" onclick="location.href='signin.html'">Sign In</button>
-                </div>
+                <button class="btn btn-signup" onclick="location.href='signup.html'">Sign Up</button>
+                <button class="btn btn-signin" onclick="location.href='signin.html'">Sign In</button>
             </div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -522,7 +537,7 @@
                             <h5>Santorini, Greece</h5>
                             <p>Experience the iconic white-washed villages, breathtaking sunsets, and crystal-clear
                                 waters.</p>
-                            <button class="btn btn-discover" onclick="location.href='signup.html' ">Book Now</button>
+                            <button class="btn btn-discover" onclick="location.href='signup.html'">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -535,7 +550,7 @@
                             <h5>Bali, Indonesia</h5>
                             <p>Discover spiritual temples, lush rice paddies, and vibrant coral reefs. A haven for
                                 adventure.</p>
-                            <button class="btn btn-discover" onclick="location.href='signup.html' ">Book Now</button>
+                            <button class="btn btn-discover" onclick="location.href='signup.html'">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -548,7 +563,7 @@
                             <h5>Kyoto, Japan</h5>
                             <p>Immerse yourself in traditional Japanese culture with ancient temples, beautiful gardens.
                             </p>
-                            <button class="btn btn-discover" onclick="location.href='signup.html' ">Book Now</button>
+                            <button class="btn btn-discover" onclick="location.href='signup.html'">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -562,7 +577,7 @@
                             <h5>Machu Picchu, Peru</h5>
                             <p>Hike to this ancient Incan citadel, a stunning historical site nestled high in the Andes.
                             </p>
-                            <button class="btn btn-discover" onclick="location.href='signup.html' ">Book Now</button>
+                            <button class="btn btn-discover" onclick="location.href='signup.html'">Book Now</button>
                         </div>
                     </div>
                 </div>
@@ -667,7 +682,7 @@
     <section class="cta-section">
         <div class="container">
             <h2>Ready to Begin Your Next Adventure?</h2>
-            <button class="btn btn-cta" onclick="location.href='signup.html' ">Book Your Adventure Now</button>
+            <button class="btn btn-cta" onclick="location.href='signup.html'">Book Your Adventure Now</button>
         </div>
     </section>
 
@@ -729,7 +744,8 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 <a href="#" class="text-secondary"> All rights reserved. | Designed by The CODECRAFTERS Team</a>.</p>
+                <p>&copy; 2025 <a href="#" class="text-secondary"> All rights reserved. | Designed by The CODECRAFTERS
+                        Team</a>.</p>
             </div>
         </div>
     </footer>
